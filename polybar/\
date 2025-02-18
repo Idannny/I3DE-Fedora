@@ -1,0 +1,36 @@
+[bar/lapbar]
+width = 100%
+height = 30
+background = #000000
+foreground = #ffffff
+font-0 = Noto Sans Mono:size=10;2
+
+modules-left = xworkspaces
+modules-center = xwindow
+modules-right = pulseaudio filesystem wlan date
+
+[module/xworkspaces]
+type = internal/xworkspaces
+pin-workspaces = true
+
+[module/xwindow]
+type = internal/xwindow
+
+[module/filesystem]
+type = internal/fs
+interval = 30
+mount-0 = /
+label = "SSD: %used%%"
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+[module/wlan]
+type = internal/network
+
+[module/date]
+type = internal/date
+interval = 1
+date = %Y-%m-%d %H:%M:%S
+label = %date%
+
