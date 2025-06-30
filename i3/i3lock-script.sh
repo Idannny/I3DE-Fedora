@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Path to your background image
-BACKGROUND="/home/dannybwoi/Pictures/paisley.png"
+BACKGROUND="/home/dannybwoi/.config/i3/background/zhengfanzi.png"
 
 # Lock screen appearance options
 i3lock \
