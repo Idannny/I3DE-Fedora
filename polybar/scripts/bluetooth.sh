@@ -15,14 +15,15 @@ case "$1" in
     fi
     ;;
 --toggle)
-    if [ -z "$(bluetoothctl show | grep 'Powered: yes')" ]; then
-        bluetoothctl power on
+    if [ -z "$(bluetui | grep 'Powered: yes')" ]; then
+        bluetoothctl power on |
+	bluetui
     else
-        bluetoothctl power off
+        bluetoothctl power off 
     fi
     ;;
 --manager)
-    blueman-manager &
+    bluetui &
     ;;
 esac
 

@@ -2,9 +2,9 @@
 
 API_KEY="cr3p59pr01ql234h73s0cr3p59pr01ql234h73sg"
 
-stocks=("IBM" "AAPL" "GOOGL" "BABA" "RIVN" "TCEHY" "BKNG" "SB" "RUT" "MSCI" "HPP" "TSM" "EWT" )
+stocks=("BTC" "IBM" "AAPL" "GOOGL" "BABA" "RIVN" "TCEHY" "BKNG" "SB" "RUT" "MSCI" "HPP" "TSM" "EWT" )
 separator=" | "
-update_interval=300  # Update data every 5 minutes (300 seconds)
+update_interval=200  # Update data every 5 minutes (300 seconds)
 
 get_stock_data() {
     local data=""
